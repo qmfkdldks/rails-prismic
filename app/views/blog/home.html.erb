@@ -1,0 +1,5 @@
+<h1>Blog#home</h1>
+<p>Find me in app/views/blog/home.html.erb</p>
+<%= prismic_type 'post' do |result| %>
+  <%= result.find_fragment('head').as_html %>
+<% end %>
