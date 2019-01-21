@@ -1,0 +1,53 @@
+
+/*------------- #HEADING --------------*/
+.crumina-heading {
+  position: relative;
+  z-index: 5;
+  margin-bottom: 30px; }
+  .crumina-heading > *:last-child {
+    margin-bottom: 0; }
+  .crumina-heading > *:first-child {
+    margin-top: 0; }
+  .crumina-heading + * {
+    margin-top: 25px; }
+
+.heading-title {
+  margin-bottom: 30px;
+  line-height: 1.3em; }
+
+.heading-text {
+  margin-top: 20px;
+  line-height: 1.75; }
+  .heading-text.small {
+    font-size: 14px; }
+  .heading-text a {
+    font-weight: 700; }
+
+.heading-sup-title {
+  color: #ff5e3a;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 700; }
+
+.with-title-decoration .heading-title {
+  position: relative;
+  padding-bottom: 30px; }
+  .with-title-decoration .heading-title:after, .with-title-decoration .heading-title:before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all .3s ease; }
+  .with-title-decoration .heading-title:after {
+    height: 1px;
+    background-color: #e6ecf5;
+    width: 100%; }
+  .with-title-decoration .heading-title:before {
+    height: 2px;
+    background-color: #ff5e3a;
+    width: 10%; }
+
+.with-title-decoration:hover .heading-title:before {
+  width: 100%; }

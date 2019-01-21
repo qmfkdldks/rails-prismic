@@ -1,0 +1,54 @@
+/*------------- #MAIN-HEADER --------------*/
+.main-header {
+  padding: 70px 0 70px 0;
+  max-width: calc(100% - 140px);
+  margin: 0 auto 30px;
+  position: relative;
+  background-position: 50% 50%; }
+  .main-header.main-header-has-header-standard {
+    padding-top: 0; }
+
+.img-bottom {
+  position: relative;
+  display: block;
+  margin: 20px auto 0;
+  margin-bottom: -70px; }
+
+.bg-account {
+  background-image: url("/img/top-header3.png"); }
+
+.bg-birthday {
+  background-image: url("/img/top-header6.png"); }
+
+.bg-badges {
+  background-image: url("/img/top-header4.png"); }
+
+.bg-events {
+  background-image: url("/img/top-header5.png"); }
+
+.bg-weather {
+  background-image: url("/img/top-header6.png"); }
+
+.bg-group {
+  background-image: url("/img/bg-group.png"); }
+
+.bg-music {
+  background-image: url("/img/top-header7.png"); }
+
+.bg-landing {
+  background-image: url("/img/landing-bg.jpg"); }
+
+.bg-users {
+  background-image: url("/img/bg-users.png"); }
+
+.main-header-content {
+  color: #fff;
+  text-align: center; }
+  .main-header-content > * {
+    color: inherit; }
+  .main-header-content > *:first-child {
+    font-weight: 300;
+    margin-bottom: 20px; }
+  .main-header-content p {
+    font-weight: 400;
+    margin-bottom: 0; }

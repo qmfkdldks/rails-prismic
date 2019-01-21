@@ -1,0 +1,25 @@
+/*------------- #POST-VIDEO --------------*/
+.post-video {
+  border: 1px solid #e6ecf5;
+  border-radius: 3px;
+  overflow: hidden;
+  margin: 20px 0; }
+  .post-video .video-content {
+    padding: 20px;
+    overflow: hidden; }
+    .post-video .video-content .title {
+      display: block; }
+    .post-video .video-content p {
+      margin: 10px 0;
+      font-size: 13px; }
+    .post-video .video-content .link-site {
+      font-size: 10px;
+      color: #9a9fbf; }
+      .post-video .video-content .link-site:hover {
+        color: #ff5e3a; }
+
+.video-thumb {
+  position: relative;
+  float: left; }
+  .video-thumb img {
+    width: 100%; }

@@ -1,0 +1,35 @@
+/*------------- #TABLE-CAREERS --------------*/
+.table-careers {
+  width: 100%; }
+  .table-careers li {
+    display: table;
+    width: 100%;
+    padding: 30px 35px;
+    border: 1px solid #e6ecf5;
+    margin-top: 18px;
+    box-shadow: 0 0 34px 0 rgba(63, 66, 87, 0.1);
+    border-radius: 5px;
+    transition: background-color .3s ease; }
+    .table-careers li:hover {
+      background-color: #e6ecf5; }
+  .table-careers span {
+    display: table-cell;
+    vertical-align: middle;
+    width: 20%; }
+    .table-careers span.position, .table-careers span.type {
+      color: #515365; }
+  .table-careers .head {
+    border: none;
+    box-shadow: none; }
+    .table-careers .head span {
+      font-size: 10px;
+      text-transform: uppercase; }
+    .table-careers .head:hover {
+      background-color: transparent; }
+  .table-careers .btn {
+    margin: 0; }
+
+/*================= Responsive Mode ============*/
+@media (max-width: 640px) {
+  .table-careers li {
+    padding: 15px; } }
