@@ -3,6 +3,7 @@
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
 Remori is a blog project powered by Prismic CMS Backend API.
+As project grows we are going to create a world largest social community for recruiting project members.
 
 ### Goal
 
