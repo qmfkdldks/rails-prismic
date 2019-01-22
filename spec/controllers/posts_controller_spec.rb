@@ -7,4 +7,12 @@ RSpec.describe PostsController, type: :controller do
       expect(response).to render_template("index")
     end
   end
+
+  describe "#show" do
+    it "should render show" do
+      params = { :id => "ruby-on-rails-rspec-cuales-son-los-tengo-que-testear" }
+      get :show, params
+      expect(response).to render_template("show")
+    end
+  end
 end

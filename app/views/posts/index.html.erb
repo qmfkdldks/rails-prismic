@@ -6,9 +6,9 @@
 
 				<ul class="cat-list-bg-style align-center sorting-menu">
 					<li class="cat-list__item active" data-filter="*"><a href="#" class="">ALL CATEGORIES</a></li>
-					<%#= @response.tags.each do |tag| %>
-						<li class="cat-list__item" data-filter=".inspiration"><a href="#" class="">INSPIRATION</a></li>
-					<%# end %>
+					<% @tags.each do |tag| %>
+						<li class="cat-list__item" data-filter=".<%= tag %>"><a href="#" class=""><%= tag %></a></li>
+					<% end %>
 				</ul>
 
 				<div class="row sorting-container" id="posts-grid-1" data-layout="masonry">
