@@ -13,7 +13,7 @@ require 'rails_helper'
 RSpec.describe PrismicRails::ViewHelpers, type: :helper do
   describe "GET all" do
     it "should return all documents" do
-
+      
     end
   end
 
