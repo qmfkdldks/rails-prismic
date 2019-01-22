@@ -151,7 +151,7 @@ select.form-control {
   background-color: #3f4257; }
 
 .tooltip-primary .tooltip-inner {
-  background-color: #ff5e3a; }
+  background-color: #3f559e; }
 
 .tooltip-completed .tooltip-inner {
   background-color: #08ddc1; }
@@ -178,9 +178,9 @@ select.form-control {
     transition: all 0.2s ease-in-out; }
     .file-upload__label:hover {
       cursor: pointer;
-      background-color: #ff5e3a; }
+      background-color: #3f559e; }
     .file-upload__label.bg-green:hover, .file-upload__label.bg-blue:hover, .file-upload__label.bg-breez:hover {
-      background-color: #ff5e3a; }
+      background-color: #3f559e; }
 
   .file-upload__input {
     position: absolute;
@@ -219,7 +219,7 @@ select.form-control {
       .list--styled li + li {
         margin-top: 30px; }
     .list--styled i, .list--styled svg {
-      color: #ff5e3a;
+      color: #3f559e;
       font-size: 20px;
       margin-right: 17px; }
     .list--styled.small-icon i, .list--styled.small-icon svg {
@@ -271,7 +271,7 @@ select.form-control {
     height: 18px;
     width: 18px;
     border-radius: 100%;
-    background-color: #ff5e3a;
+    background-color: #3f559e;
     -webkit-transform: scale3d(0, 0, 0);
     transform: scale3d(0, 0, 0); }
 
@@ -302,10 +302,10 @@ select.form-control {
     opacity: 1; }
 
   .radio input[type=radio]:checked ~ .check {
-    background-color: #ff5e3a; }
+    background-color: #3f559e; }
 
   .radio input[type=radio]:checked ~ .circle {
-    border-color: #ff5e3a; }
+    border-color: #3f559e; }
 
   .radio input[type=radio]:checked ~ .check {
     -webkit-transform: scale3d(0.45, 0.45, 1);
@@ -431,7 +431,7 @@ select.form-control {
     opacity: 0.2; }
 
   .checkbox input[type=checkbox]:checked + .checkbox-material .check {
-    background: #ff5e3a; }
+    background: #3f559e; }
 
   .checkbox input[type=checkbox]:checked + .checkbox-material .check:before {
     color: #FFFFFF;
