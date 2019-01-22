@@ -6,9 +6,9 @@
 
 				<ul class="cat-list-bg-style align-center sorting-menu">
 					<li class="cat-list__item active" data-filter="*"><a href="#" class="">ALL CATEGORIES</a></li>
-					<%= @response.tags.each do |tag| %>
+					<%#= @response.tags.each do |tag| %>
 						<li class="cat-list__item" data-filter=".inspiration"><a href="#" class="">INSPIRATION</a></li>
-					<% end %>
+					<%# end %>
 				</ul>
 
 				<div class="row sorting-container" id="posts-grid-1" data-layout="masonry">
@@ -25,7 +25,7 @@
 
     								<div class="post-content">
     									<a href="#" class="post-category bg-transparent">THE COMMUNITY</a>
-    									<a href="#" class="h4 post-title"><%= document["#{document.type}.head"].as_text %></a>
+    									<%= link_to post_path(document.uid), class: "h4 post-title" do %><%= document["#{document.type}.head"].as_text %><% end %>
 
     									<div class="post__author author vcard inline-items">
     										<!-- <img src="https://html.crumina.net/html-olympus/img/avatar83-sm.jpg" alt="author"> -->
