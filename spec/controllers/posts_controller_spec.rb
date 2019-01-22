@@ -17,7 +17,11 @@ RSpec.describe PostsController, type: :controller do
     end
 
     context "when id is invalid or empty" do
-      it "should respond with a 404"
+      it "should respond with a 404" do
+        params = { id: "not exist" }
+        get :show, params: params
+        expect(response.status).to eq(404)
+      end
     end
   end
 end
