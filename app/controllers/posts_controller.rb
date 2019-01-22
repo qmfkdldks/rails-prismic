@@ -3,7 +3,6 @@ class PostsController < ApplicationController
     api = Prismic.api('https://remori.cdn.prismic.io/api')
     @response = api.all
 
-    puts api.inspect 
     @tags = api.tags
     @documents = @response.results
   end
