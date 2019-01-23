@@ -14,7 +14,7 @@
 				<div class="row sorting-container" id="posts-grid-1" data-layout="masonry">
             <% @documents.each do |document| %>
 
-              <div class="col col-xl-4 col-lg-4 col-md-6 col-sm-12  sorting-item community">
+              <div class="col col-xl-4 col-lg-4 col-md-6 col-sm-12  sorting-item <%= document.tags.join(" ") %>">
     						<div class="ui-block">
     							<!-- Post -->
     							<article class="hentry blog-post blog-post-v2">
@@ -24,7 +24,7 @@
     								</div>
 
     								<div class="post-content">
-    									<a href="#" class="post-category bg-transparent">THE COMMUNITY</a>
+    									<a href="#" onclick="return false;" class="post-category bg-primary"><%= document.tags.sample %></a>
     									<%= link_to post_path(document.uid), class: "h4 post-title" do %><%= document["#{document.type}.head"].as_text %><% end %>
 
     									<div class="post__author author vcard inline-items">
