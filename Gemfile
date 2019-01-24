@@ -43,7 +43,10 @@ gem 'prismic.io', require: 'prismic'
 gem 'figaro'
 # Bootstrap style framework
 gem 'bootstrap', '~> 4.1.3'
+# JQuery
 gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
+# Exception handling with custom dynamic view
+gem 'exception_handler', '~> 0.8.0.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
