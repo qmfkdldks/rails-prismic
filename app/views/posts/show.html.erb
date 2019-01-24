@@ -53,13 +53,15 @@
 								<span>0</span>
 							</a>
 
-							<a href="#" class="btn btn-control has-i bg-facebook">
+							<a class="btn btn-control has-i bg-facebook" href="https://www.facebook.com/sharer/sharer.php?app_id=[1692808077486759]&sdk=joey&u=[<%= post_url(@document.uid) %>]&display=popup&ref=plugin&src=share_button" onclick="return !window.open(this.href, 'Facebook', 'width=640,height=580')">
 								<i class="fab fa-facebook-f" aria-hidden="true"></i>
 							</a>
 
-							<a href="#" class="btn btn-control has-i bg-twitter">
+							<a class="btn btn-control has-i bg-twitter"
+							  href="https://twitter.com/intent/tweet?url=<%= post_url(@document.uid) %>">
 								<i class="fab fa-twitter" aria-hidden="true"></i>
 							</a>
+
 						</div>
 
 						<div class="post-content">
