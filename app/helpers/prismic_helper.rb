@@ -1,5 +1,7 @@
 module PrismicHelper
-
+  def get_dashed_tags(tags)
+    tags.map { |t| t.gsub(/\s/,'-') }
+  end
   # For a given document, describes its URL on your front-office.
   # You really should edit this method, so that it supports all the document types your users might link to.
   #

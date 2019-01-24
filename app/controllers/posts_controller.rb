@@ -10,6 +10,7 @@ class PostsController < ApplicationController
   def show
     api = Prismic.api('https://remori.cdn.prismic.io/api')
     @document = api.getByUID("image-post", params[:id])
+    @tags = @document.tags
 
     render text: "Not found", status: :not_found if @document.nil?
   end
