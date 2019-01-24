@@ -1,17 +1,19 @@
 class PostsController < ApplicationController
   def index
-    api = Prismic.api('https://remori.cdn.prismic.io/api')
-    @response = api.all
+    prismic = PrismicService.new
+    @response = prismic.all
 
-    @tags = api.tags
+    @tags = prismic.tags
     @documents = @response.results
   end
 
   def show
-    api = Prismic.api('https://remori.cdn.prismic.io/api')
-    @document = api.getByUID("image-post", params[:id])
-    @tags = @document.tags
+    # api = Prismic.api('https://remori.cdn.prismic.io/api')
+    # @document = api.getByUID("image-post", params[:id])
+    documents = PrismicService.new.query(:at, "my.image-post.uid", params[:id])
+    @document = documents.first
+    raise ActiveRecord::RecordNotFound, "Record not found." if @document.nil?
 
-    render text: "Not found", status: :not_found if @document.nil?
+    @tags = @document.tags
   end
 end
