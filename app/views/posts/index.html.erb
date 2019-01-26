@@ -25,7 +25,7 @@
 
     								<div class="post-content">
     									<a href="#" onclick="return false;" class="post-category bg-primary"><%= document.tags.sample %></a>
-    									<%= link_to post_path(document.uid), class: "h4 post-title" do %><%= document["#{document.type}.head"].as_text %><% end %>
+    									<%= link_to post_path(document.uid, type: document.type), class: "h4 post-title" do %><%= document["#{document.type}.head"].as_text %><% end %>
 
     									<div class="post__author author vcard inline-items">
     										<!-- <img src="https://html.crumina.net/html-olympus/img/avatar83-sm.jpg" alt="author"> -->

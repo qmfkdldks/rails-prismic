@@ -1,6 +1,7 @@
 example_id                                           | status | run_time        |
 ---------------------------------------------------- | ------ | --------------- |
-./spec/controllers/posts_controller_spec.rb[1:1:1]   | passed | 4.12 seconds    |
-./spec/controllers/posts_controller_spec.rb[1:2:1]   | passed | 0.26451 seconds |
-./spec/controllers/posts_controller_spec.rb[1:2:2:1] | passed | 0.40909 seconds |
-./spec/requests/prismic_spec.rb[1:1:1]               | passed | 0.7813 seconds  |
+./spec/controllers/posts_controller_spec.rb[1:1:1]   | passed | 3.51 seconds    |
+./spec/controllers/posts_controller_spec.rb[1:2:1]   | passed | 0.1994 seconds  |
+./spec/controllers/posts_controller_spec.rb[1:2:2:1] | passed | 0.20121 seconds |
+./spec/requests/prismic_spec.rb[1:1:1]               | passed | 0.02767 seconds |
+./spec/requests/prismic_spec.rb[1:2:1]               | passed | 0.20044 seconds |
