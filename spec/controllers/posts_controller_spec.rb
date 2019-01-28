@@ -4,7 +4,6 @@ RSpec.describe PostsController, type: :controller do
   describe "#index" do
     it "should render index" do
       get :index
-      expect(response).to render_template("index")
       expect(response.status).to eq(200)
     end
   end
@@ -13,7 +12,6 @@ RSpec.describe PostsController, type: :controller do
     it "should render show" do
       params = { type: "image-post", id: "ruby-on-rails-rspec-cuales-son-los-tengo-que-testear" }
       get :show, params: params
-      expect(response).to render_template("show")
       expect(response.status).to eq(200)
     end
 

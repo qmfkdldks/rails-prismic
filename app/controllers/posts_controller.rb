@@ -1,6 +1,5 @@
 class PostsController < ApplicationController
   def index
-    prismic = PrismicService.new
     @response = prismic.all
 
     @tags = prismic.tags
@@ -11,11 +10,14 @@ class PostsController < ApplicationController
   # @param [type] document's type
   # @param [id] uid of the document
   def show
-    prismic = PrismicService.new
-    documents = prismic.query(:at, "my.#{params[:type]}.uid", params[:id])
-    @document = documents.first
+    @document = prismic.get_by_uid(params[:type], params[:id])
     raise ActionController::RoutingError.new('Not Found') if @document.nil?
 
     @tags = @document.tags
+  end
+
+  private
+  def prismic
+    Prismic.api('https://remori.cdn.prismic.io/api')
   end
 end
