@@ -1,0 +1,70 @@
+
+/*------------- #TESTIMONIALS --------------*/
+.crumina-testimonial-item {
+  text-align: center; }
+  .crumina-testimonial-item .author-thumb {
+    height: 98px;
+    width: 98px;
+    margin: 0 auto 15px; }
+    .crumina-testimonial-item .author-thumb img {
+      border: 4px solid #fff; }
+  .crumina-testimonial-item .rait-stars {
+    margin-bottom: 40px; }
+    .crumina-testimonial-item .rait-stars .star-icon {
+      font-size: 11px;
+      color: #ffce08; }
+  .crumina-testimonial-item .author-content {
+    margin-top: auto;
+    margin-bottom: 15px; }
+  .crumina-testimonial-item .testimonial-message {
+    margin-bottom: 70px; }
+
+.testimonial-header-thumb {
+  height: 90px;
+  overflow: hidden;
+  background-image: url("/img/testimonial-header.png");
+  background-size: cover; }
+
+.testimonial-item-content {
+  margin-top: -49px;
+  padding: 0 30px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+/*------------- #INFO-BOXES --------------*/
+.crumina-info-box {
+  text-align: center; }
+
+.info-box-image {
+  margin-bottom: 50px; }
+
+.info-box-wrap .crumina-info-box {
+  margin-bottom: 90px; }
+
+.info-box-title {
+  margin-bottom: 40px; }
+
+.crumina-info-box--thumb-left {
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .crumina-info-box--thumb-left .info-box-image {
+    margin-bottom: 0;
+    margin-right: 30px; }
+  .crumina-info-box--thumb-left .info-box-title {
+    margin-bottom: 30px; }
+
+/*------------- Responsive mode styles --------------*/
+@media (max-width: 768px) {
+  .info-box-image {
+    margin-bottom: 20px; }
+  .info-box-title {
+    margin-bottom: 20px; }
+  .info-box-wrap .crumina-info-box {
+    margin-bottom: 30px; } }

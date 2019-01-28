@@ -1,0 +1,95 @@
+/*------------- #CONTACTS --------------*/
+.contact-item-wrap {
+  margin-bottom: 30px; }
+  .contact-item-wrap:hover .contact-title:after {
+    width: 100%; }
+
+.contact-title {
+  position: relative;
+  padding-bottom: 35px;
+  margin-bottom: 50px; }
+  .contact-title:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 15%;
+    height: 2px;
+    background-color: #3f559e;
+    transition: width .3s ease-in-out; }
+
+.contact-item .sub-title {
+  font-weight: 400; }
+
+.contact-item a {
+  color: #888da8;
+  display: block; }
+  .contact-item a:hover {
+    color: #3f559e; }
+
+.contact-item + .contact-item {
+  margin-top: 30px; }
+
+/*------------- #CONTACT-FORM --------------*/
+.contact-form-wrap {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #e6ecf5;
+  border-radius: 5px;
+  box-shadow: 0 0 34px 0 rgba(63, 66, 87, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 2;
+  overflow: hidden; }
+  .contact-form-wrap .contact-form {
+    width: 60%; }
+
+.contact-form-thumb {
+  position: relative;
+  padding: 50px 40px;
+  color: #fff;
+  background-image: url("/img/contact-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 40%; }
+  .contact-form-thumb .title {
+    color: inherit;
+    font-size: 34px;
+    margin-bottom: 40px;
+    line-height: 1; }
+    .contact-form-thumb .title span {
+      font-size: 64px;
+      display: block; }
+
+.contact-form {
+  padding: 50px 40px 30px; }
+  .contact-form .btn {
+    margin-bottom: 0; }
+
+/*================= Responsive Mode ============*/
+@media (max-width: 1200px) {
+  .contact-form-thumb .title span {
+    font-size: 34px; }
+  .contact-form-thumb .title {
+    margin-bottom: 20px; }
+  .contact-form-thumb {
+    padding: 30px; }
+  .contact-form-wrap .contact-form {
+    padding: 30px; } }
+
+@media (max-width: 860px) {
+  .contact-form-thumb .title, .contact-form-thumb .title span {
+    font-size: 22px; } }
+
+@media (max-width: 600px) {
+  .contact-form-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .contact-form-thumb {
+    width: 100%; }
+  .contact-form-wrap .contact-form {
+    width: 100%; } }

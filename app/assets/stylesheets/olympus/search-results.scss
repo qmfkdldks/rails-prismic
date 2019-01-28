@@ -1,0 +1,44 @@
+
+/*------------- #SERACH-RESULTS --------------*/
+.searches-item .notification-icon {
+  float: right; }
+
+.searches-item .country {
+  font-size: 12px; }
+
+.searches-item .names-people-likes a {
+  display: block; }
+
+.searches-item .post-additional-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .searches-item .post-additional-info > *:last-child {
+    margin-left: auto; }
+
+.searches-item .friend-count {
+  margin-bottom: 0; }
+
+.searches-item .friend-count-item {
+  margin-right: 50px; }
+  .searches-item .friend-count-item:last-child {
+    margin-right: 0; }
+  .searches-item .friend-count-item .h6 {
+    margin-bottom: 0;
+    line-height: 1;
+    font-size: 12px; }
+  .searches-item .friend-count-item .title {
+    font-size: 12px;
+    line-height: 1; }
+
+.user-description {
+  font-size: 13px;
+  padding: 25px 0;
+  border-top: 1px solid #e6ecf5;
+  border-bottom: 1px solid #e6ecf5; }
+  .user-description .title {
+    font-weight: 500;
+    color: #515365; }

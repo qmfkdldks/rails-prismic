@@ -1,0 +1,59 @@
+<div class="container">
+	<div class="row">
+
+		<div class="col col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+			<div class="clients-grid">
+
+				<ul class="cat-list-bg-style align-center sorting-menu">
+					<li class="cat-list__item active" data-filter="*"><a href="#" class="">ALL</a></li>
+					<% @tags.each do |tag| %>
+						<li class="cat-list__item" data-filter=".<%= tag.gsub(/\s/, '-') %>"><a href="#" class=""><%= tag %></a></li>
+					<% end %>
+				</ul>
+
+				<div class="row sorting-container" id="posts-grid-1" data-layout="masonry">
+            <% @documents.each do |document| %>
+
+              <div class="col col-xl-4 col-lg-4 col-md-6 col-sm-12  sorting-item <%= get_dashed_tags(document.tags).join(" ") %>">
+    						<div class="ui-block">
+    							<!-- Post -->
+    							<article class="hentry blog-post blog-post-v2">
+
+    								<div class="post-thumb">
+    									<img src="<%= document["#{document.type}.image"].get_view("thumbnail").url %>" alt="photo">
+    								</div>
+
+    								<div class="post-content">
+    									<a href="#" onclick="return false;" class="post-category bg-primary"><%= document.tags.sample %></a>
+    									<%= link_to post_path(document.uid, type: document.type), class: "h4 post-title" do %><%= document["#{document.type}.head"].as_text %><% end %>
+
+    									<div class="post__author author vcard inline-items">
+    										<!-- <img src="https://html.crumina.net/html-olympus/img/avatar83-sm.jpg" alt="author"> -->
+
+    										<div class="author-date not-uppercase">
+    											<!-- <a class="h6 post__author-name fn" href="#">Brian Kang</a> -->
+    											<div class="post__date">
+    												<time class="published" datetime="2017-03-24T18:18">
+    													<%= time_ago_in_words(document["#{document.type}.date"].value) %>
+    												</time>
+    											</div>
+    										</div>
+
+    									</div>
+    								</div>
+
+    							</article>
+    							<!-- ... end Post -->
+    						</div>
+    					</div>
+            <% end %>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<a id="load-more-button" href="#" class="btn btn-control btn-more" data-load-link="posts-load-moreV2.html" data-container="posts-grid-1">
+		<i class="fas fa-caret-down"></i>
+	</a>
+</div>

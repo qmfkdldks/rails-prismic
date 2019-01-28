@@ -1,0 +1,97 @@
+/*------------- #BLOG-POSTS --------------*/
+.blog-post-wrap .blog-post {
+  margin-bottom: 30px; }
+
+.blog-post-wrap .ui-block {
+  margin-bottom: 30px; }
+  .blog-post-wrap .ui-block .blog-post {
+    margin-bottom: 0; }
+
+.blog-post .post-thumb {
+  border-radius: 5px;
+  margin-bottom: 0; }
+
+.blog-post .post-content {
+  padding: 20px 25px; }
+
+.blog-post .post-title {
+  display: block;
+  margin-bottom: 14px; }
+  .blog-post .post-title:hover {
+    color: #3f559e; }
+
+.blog-post .author-date {
+  text-transform: uppercase;
+  font-size: 10px; }
+
+.blog-post .post__date {
+  display: inline-block; }
+
+.blog-post .post__author-name {
+  font-size: 10px; }
+
+.blog-post .post-additional-info {
+  margin-top: 15px; }
+  .blog-post .post-additional-info > * {
+    margin-right: 0; }
+
+.blog-post .friends-harmonic a {
+  border-radius: 0; }
+
+.blog-post .post-additional-info .comments-shared {
+  margin-top: 4px; }
+
+.post-category {
+  display: inline-block;
+  border-radius: 3px;
+  padding: 4px 9px;
+  color: #fff;
+  font-size: 8px;
+  text-transform: uppercase;
+  margin-bottom: 20px; }
+  .post-category.bg-transparent {
+    background-color: transparent;
+    color: #3f559e;
+    padding: 0;
+    font-size: 10px; }
+    .post-category.bg-transparent:hover {
+      color: #3f559e; }
+  .post-category:hover {
+    color: #fff; }
+
+.blog-post-v1:hover .post-title {
+  opacity: 1;
+  color: #fff; }
+
+.blog-post-v1 .post-thumb {
+  position: relative; }
+  .blog-post-v1 .post-thumb:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 -100px 55px -30px rgba(0, 0, 0, 0.8); }
+
+.blog-post-v1 .post-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 3; }
+
+.blog-post-v1 .post-additional-info {
+  margin-top: 0;
+  border-top: none;
+  padding: 20px 25px; }
+
+.blog-post-v1 .post-title {
+  color: #fff;
+  opacity: .7; }
+
+.blog-post-v1 .author-date {
+  color: #888da8; }
+
+.blog-post-v1 .post__author-name {
+  color: #fff; }
