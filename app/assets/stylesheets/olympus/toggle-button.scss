@@ -1,0 +1,115 @@
+  /*------------- Toggle Button --------------*/
+  .togglebutton {
+    vertical-align: middle;
+    margin-bottom: 20px; }
+
+  .togglebutton, .togglebutton label, .togglebutton input, .togglebutton .toggle {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none; }
+
+  .togglebutton label {
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.26); }
+
+  .form-group.is-focused .togglebutton label, .form-group.has-bootstrap-select .togglebutton label {
+    color: rgba(0, 0, 0, 0.26); }
+
+  .form-group.is-focused .togglebutton label:hover, .form-group.is-focused .togglebutton label:focus {
+    color: rgba(0, 0, 0, 0.54); }
+
+  fieldset[disabled] .form-group.is-focused .togglebutton label {
+    color: rgba(0, 0, 0, 0.26); }
+
+  .togglebutton label input[type=checkbox] {
+    opacity: 0;
+    width: 0;
+    height: 0; }
+
+  .togglebutton label .toggle {
+    text-align: left;
+    margin-left: 5px; }
+
+  .togglebutton label .toggle,
+  .togglebutton label input[type=checkbox][disabled] + .toggle {
+    content: "";
+    display: inline-block;
+    width: 66px;
+    height: 30px;
+    background-color: rgba(80, 80, 80, 0.7);
+    border-radius: 15px;
+    margin-right: 0;
+    transition: background 0.3s ease;
+    vertical-align: middle; }
+
+  .togglebutton label .toggle:after {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 26px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    position: relative;
+    left: 3px;
+    top: 3px;
+    transition: left 0.3s ease, background 0.3s ease, box-shadow 0.1s ease;
+    text-align: center; }
+
+  .togglebutton label input[type=checkbox][disabled] + .toggle:after, .togglebutton label input[type=checkbox][disabled]:checked + .toggle:after {
+    background-color: #BDBDBD; }
+
+  .togglebutton label input[type=checkbox] + .toggle:active:after, .togglebutton label input[type=checkbox][disabled] + .toggle:active:after {
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.1); }
+
+  .togglebutton label input[type=checkbox]:checked + .toggle:after {
+    left: 39px; }
+
+  .togglebutton label input[type=checkbox]:checked + .toggle {
+    background-color: #3f559e; }
+
+  .togglebutton.blue label input[type=checkbox]:checked + .toggle {
+    background-color: #38a9ff; }
+
+  .togglebutton label input[type=checkbox]:checked + .toggle:active:after {
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(156, 39, 176, 0.1); }
+
+  .description-toggle {
+    display: table;
+    width: 100%;
+    margin-bottom: 30px; }
+    .description-toggle > * {
+      display: table-cell;
+      vertical-align: middle; }
+    .description-toggle .togglebutton {
+      text-align: right; }
+    .description-toggle p {
+      margin-bottom: 0; }
+
+  .add-field {
+    display: table;
+    color: #888da8;
+    fill: #888da8;
+    margin-bottom: 1rem;
+    line-height: 100%; }
+    .add-field svg {
+      margin-right: 10px;
+      width: 12px;
+      height: 12px; }
+    .add-field > * {
+      display: table-cell;
+      vertical-align: middle; }
+
+  .switcher-block {
+    margin: 19px 0;
+    display: table;
+    width: 100%; }
+    .switcher-block .title {
+      font-size: 13px; }
+    .switcher-block > * {
+      margin-bottom: 0;
+      display: table-cell;
+      vertical-align: middle; }
+      .switcher-block > *:last-child {
+        text-align: right; }

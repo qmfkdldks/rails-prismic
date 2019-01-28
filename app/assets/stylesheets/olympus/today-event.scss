@@ -1,0 +1,160 @@
+
+/*------------- #TODAY-EVENTS --------------*/
+.today-events .control-block-button {
+  right: 25px;
+  top: -25px;
+  z-index: 5; }
+  .today-events .control-block-button svg {
+    width: 20px;
+    height: 20px; }
+  .today-events .control-block-button .olymp-dropdown-arrow-icon {
+    width: 6px;
+    height: 4px; }
+
+.today-events .day-event {
+  display: block !important;
+  border-top: none; }
+  .today-events .day-event .card-header i, .today-events .day-event .card-header svg {
+    margin-top: 3px;
+    margin-left: 7px;
+    float: none; }
+
+.today-events .card.checked .event-time:before {
+  border-color: #38a9ff; }
+
+.today-events .event-time {
+  position: relative; }
+  .today-events .event-time:before {
+    content: '';
+    width: 9px;
+    height: 9px;
+    border: 2px solid #08ddc1;
+    border-radius: 100%;
+    display: block;
+    position: absolute;
+    left: -31px;
+    top: 5px;
+    background-color: #fff; }
+
+.today-events .title {
+  position: relative;
+  padding-right: 30px; }
+
+.today-events .event-status-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  fill: #888da8; }
+  .today-events .event-status-icon.completed {
+    fill: #08ddc1; }
+  .today-events .event-status-icon.checked {
+    fill: #38a9ff; }
+
+.today-events .event-time {
+  margin-bottom: 10px; }
+  .today-events .event-time time {
+    font-size: 12px; }
+
+.today-events.calendar .list {
+  margin-top: 0;
+  position: relative;
+  overflow: visible; }
+
+.today-events.calendar .card {
+  border-bottom: none;
+  padding-left: 25px; }
+  .today-events.calendar .card:before {
+    display: block;
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: #e6ecf5;
+    position: absolute;
+    left: 25px;
+    top: 0; }
+  .today-events.calendar .card:last-child:before {
+    height: 25px; }
+  .today-events.calendar .card:last-child .card-header {
+    padding-bottom: 25px; }
+  .today-events.calendar .card:first-child .card-header {
+    padding-top: 25px; }
+
+.today-events.calendar .day-event .card-header .event-status-icon i, .today-events.calendar .day-event .card-header .event-status-icon svg {
+  margin-top: 0;
+  margin-left: 0;
+  width: 20px;
+  height: 20px; }
+
+.today-events.calendar .card-header {
+  padding: 15px 25px; }
+  .today-events.calendar .card-header a {
+    font-size: 14px; }
+  .today-events.calendar .card-header .more-dropdown {
+    right: auto;
+    left: 0; }
+    .today-events.calendar .card-header .more-dropdown a {
+      font-size: 12px; }
+      .today-events.calendar .card-header .more-dropdown a:hover {
+        color: #08ddc1; }
+  .today-events.calendar .card-header .olymp-dropdown-arrow-icon {
+    width: 6px;
+    height: 4px;
+    margin-left: 5px; }
+  .today-events.calendar .card-header .olymp-three-dots-icon {
+    width: 16px;
+    height: 4px;
+    margin-left: 7px; }
+
+.today-events-thumb {
+  position: relative;
+  background-image: url("/img/bg-event-day.jpg");
+  text-align: center;
+  padding: 25px;
+  color: #fff; }
+  .today-events-thumb .day-number {
+    font-size: 80px;
+    line-height: 1;
+    margin-bottom: 5px; }
+  .today-events-thumb .day-week {
+    font-size: 24px;
+    margin-bottom: 5px; }
+  .today-events-thumb .month-year {
+    font-size: 12px;
+    color: #888da8; }
+
+.card-header a .olymp-dropdown-arrow-icon {
+  width: 6px;
+  height: 4px; }
+
+/*------------- #CALENDAR-EVENTS-TABS --------------*/
+.calendar-events-tabs .nav-item {
+  display: inline-block; }
+  .calendar-events-tabs .nav-item + .nav-item {
+    margin-left: 60px; }
+
+.calendar-events-tabs.nav-tabs {
+  border-bottom: none; }
+  .calendar-events-tabs.nav-tabs .nav-link {
+    padding: 0;
+    border: none;
+    border-color: transparent;
+    font-weight: 700;
+    font-size: 14px;
+    color: #888da8; }
+    .calendar-events-tabs.nav-tabs .nav-link.active {
+      color: #515365;
+      background-color: transparent; }
+  .calendar-events-tabs.nav-tabs .items-round-little {
+    display: inline-block; }
+
+/*================= Responsive Mode ============*/
+@media (max-width: 420px) {
+  .calendar-events-tabs .nav-item + .nav-item {
+    margin-left: 10px; } }
+
+@media (max-width: 320px) {
+  .calendar-events-tabs .nav-item {
+    display: block; }
+  .calendar-events-tabs .nav-item + .nav-item {
+    margin-left: 0;
+    margin-top: 10px; } }
