@@ -22,6 +22,17 @@ $(document).on("turbolinks:load", function () {
     $('.header-menu').toggleClass('expanded-menu');
     return false
   });
+  
+  $(".js-open-responsive-menu").on('click', function () {
+    $('.header-menu').toggleClass('open');
+    return false
+  });
+
+  $(".js-close-responsive-menu").on('click', function () {
+    $('.header-menu').removeClass('open');
+    return false
+  });
+
 
   // Define Isotope function for home posts
   IsotopeSort = function () {
