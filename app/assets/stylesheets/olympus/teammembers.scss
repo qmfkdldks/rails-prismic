@@ -10,10 +10,12 @@
     opacity: 0;
     -webkit-filter: grayscale(0);
             filter: grayscale(0);
-    visibility: hidden; }
+    visibility: hidden;
+   }
   .crumina-teammembers-item:hover img.main {
     -webkit-filter: grayscale(0);
-            filter: grayscale(0); }
+            filter: grayscale(0);
+  }
 
 .teammembers-item-prof {
   font-size: 10px;
@@ -32,8 +34,8 @@
   display: inline-block; }
   .teammembers-thumb img {
     transition: all 1s ease-out;
-    -webkit-filter: grayscale(100%);
-            filter: grayscale(100%);
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0);
     display: block;
     margin: 0 auto; }
     .teammembers-thumb img.hover {
